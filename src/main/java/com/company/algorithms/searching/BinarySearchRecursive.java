@@ -14,15 +14,15 @@ public class BinarySearchRecursive {
         System.out.print("Before com.company.algorithms.sorting: ");
         printArr(arr);
 
-        BubbleSort.bubbleSort(arr);                      // com.company.algorithms.sorting
+        BubbleSort.bubbleSort(arr);                      // sorting
         System.out.print("\nAfter com.company.algorithms.sorting:  ");
         printArr(arr);
 
         System.out.print("\n\nFind number: ");           // input
         int x = in.nextInt();
 
-        int result = recursiveBinarySearch(arr, x);      // com.company.algorithms.searching
-//        int result = recursiveBinarySearch(arr, 0, arr.length, x);      // com.company.algorithms.searching
+        int result = recursiveBinarySearch(arr, x);      // searching
+//        int result = recursiveBinarySearch(arr, 0, arr.length, x);      // searching
         System.out.println(x + " index of: " + result);
     }
 
