@@ -5,24 +5,24 @@ import com.company.algorithms.sorting.BubbleSort;
 
 import java.util.Scanner;
 
-public class RecursiveBinarySearch {
+public class BinarySearchRecursive {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
-        // Test Recursive Binary Search
-        int arr[] = new int[]{5, 3, 10, 0, 4};           // unsorted
-        System.out.print("Before sorting: ");
+        // CreateRandomWordsFromText Recursive Binary Search
+        int[] arr = new int[]{5, 3, 10, 0, 4};           // unsorted
+        System.out.print("Before com.company.algorithms.sorting: ");
         printArr(arr);
 
-        BubbleSort.bubbleSort(arr);                      // sorting
-        System.out.print("\nAfter sorting:  ");
+        BubbleSort.bubbleSort(arr);                      // com.company.algorithms.sorting
+        System.out.print("\nAfter com.company.algorithms.sorting:  ");
         printArr(arr);
 
         System.out.print("\n\nFind number: ");           // input
         int x = in.nextInt();
 
-        int result = recursiveBinarySearch(arr, x);      // searching
-//        int result = recursiveBinarySearch(arr, 0, arr.length, x);      // searching
+        int result = recursiveBinarySearch(arr, x);      // com.company.algorithms.searching
+//        int result = recursiveBinarySearch(arr, 0, arr.length, x);      // com.company.algorithms.searching
         System.out.println(x + " index of: " + result);
     }
 
@@ -64,8 +64,7 @@ public class RecursiveBinarySearch {
     public static void printArr(int[] arr) {
         System.out.print("| ");
 
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " | ");
-        }
+        for (int value : arr)
+            System.out.print(value + " | ");
     }
 }

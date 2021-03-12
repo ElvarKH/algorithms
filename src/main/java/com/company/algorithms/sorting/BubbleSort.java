@@ -3,9 +3,6 @@ package com.company.algorithms.sorting;
 public class BubbleSort {
 
     public static void main(String[] args) {
-
-        // Test Bubble Sort
-//        int[] arr = new int[]{5, 3, 10, 0, 4};
         int[] arr = new int[]{1, 2, 3};
         bubbleSort(arr);
         printArr(arr);

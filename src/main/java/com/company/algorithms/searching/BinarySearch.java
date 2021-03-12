@@ -8,13 +8,13 @@ public class BinarySearch {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
-        // Test Binary Search
-        int arr[] = new int[]{5, 3, 10, 0, 4};               // unsorted
-        System.out.print("Before sorting: ");
+        // CreateRandomWordsFromText Binary Search
+        int[] arr = new int[]{5, 3, 10, 0, 4};               // unsorted
+        System.out.print("Before com.company.algorithms.sorting: ");
         printArr(arr);
 
         BubbleSort.bubbleSort(arr);                          // sorting
-        System.out.print("\nAfter sorting:  ");
+        System.out.print("\nAfter com.company.algorithms.sorting:  ");
         printArr(arr);
 
         System.out.print("\n\nFind number: ");               // input
@@ -61,8 +61,7 @@ public class BinarySearch {
     public static void printArr(int[] arr) {
         System.out.print("| ");
 
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " | ");
-        }
+        for (int value : arr)
+            System.out.print(value + " | ");
     }
 }

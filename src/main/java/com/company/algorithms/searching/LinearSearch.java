@@ -7,8 +7,8 @@ public class LinearSearch {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
-        // Test Linear Search
-        int arr[] = new int[]{5, 3, 10, 0, 4};
+        // CreateRandomWordsFromText Linear Search
+        int[] arr = new int[]{5, 3, 10, 0, 4};
         printArr(arr);
 
         System.out.print("\n\nFind number: ");
@@ -30,8 +30,7 @@ public class LinearSearch {
     public static void printArr(int[] arr) {
         System.out.print("| ");
 
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " | ");
-        }
+        for (int value : arr)
+            System.out.print(value + " | ");
     }
 }

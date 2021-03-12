@@ -2,7 +2,7 @@ package com.company.algorithms.searching;
 
 import java.util.Scanner;
 
-public class BinarySearchGame {
+public class BinarySearchGame1 {
     public static void main(String[] args) {
         int rand = (int) (Math.random() * 1000) + 1;
         game(rand);

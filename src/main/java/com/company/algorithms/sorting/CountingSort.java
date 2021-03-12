@@ -15,7 +15,7 @@ public class CountingSort {
         // create output array
         int[] output = new int[arr.length];
 
-        // count of each unique object
+        // count of each unique number
         for (int i : arr)
             ++count[i];
 
@@ -23,7 +23,7 @@ public class CountingSort {
         for (int i = 2; i < count.length; ++i)
             count[i] += count[i - 1];
 
-        // sorting...
+        // com.company.algorithms.sorting...
         for (int i = arr.length - 1; i >= 0; i--)
             output[count[arr[i]]-- - 1] = arr[i];
 

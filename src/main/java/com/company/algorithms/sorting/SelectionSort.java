@@ -3,9 +3,7 @@ package com.company.algorithms.sorting;
 public class SelectionSort {
 
     public static void main(String[] args) {
-
-        // Test Selection Sort
-        int arr[] = new int[]{5, 3, 10, 0, 4};
+        int[] arr = new int[]{5, 3, 10, 0, 4};
         selectionSort(arr);
         printArr(arr);
     }
@@ -26,11 +24,10 @@ public class SelectionSort {
         }
     }
 
-    public static void printArr(int[] arr) {
+    static void printArr(int[] arr) {
         System.out.print("| ");
 
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " | ");
-        }
+        for (int value : arr)
+            System.out.print(value + " | ");
     }
 }
